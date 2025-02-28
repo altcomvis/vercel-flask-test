@@ -7,7 +7,7 @@ from googleapiclient.http import MediaFileUpload
 app = Flask(__name__)
 
 # Configurações do Google Drive
-SERVICE_ACCOUNT_FILE = 'teste-de-integracao-edna-0f300bc2a370.json'
+SERVICE_ACCOUNT_FILE = 'teste-de-integracao-edna-c5e3e62f5169.json'
 SCOPES = ['https://www.googleapis.com/auth/drive']
 FOLDER_ID = '1yn-xz1Ub0uFc0CjkSWu1DZ3U7Rpq6wCS'
 
