@@ -1,19 +1,26 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify
 import os
+import json
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)
 
 # Configurações do Google Drive
-SERVICE_ACCOUNT_FILE = 'teste-de-integracao-edna-c5e3e62f5169.json'
 SCOPES = ['https://www.googleapis.com/auth/drive']
 FOLDER_ID = '1yn-xz1Ub0uFc0CjkSWu1DZ3U7Rpq6wCS'
 
 def get_drive_service():
-    credentials = service_account.Credentials.from_service_account_file(
-        SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+    # Lê as credenciais a partir da variável de ambiente GCP_SERVICE_ACCOUNT
+    # A variável deve conter o conteúdo JSON (como string) da conta de serviço.
+    service_account_info = json.loads(os.environ.get("GCP_SERVICE_ACCOUNT"))
+    credentials = service_account.Credentials.from_service_account_info(
+        service_account_info,
+        scopes=SCOPES
+    )
     return build('drive', 'v3', credentials=credentials)
 
 def upload_file_to_drive(file_path):
@@ -41,8 +48,7 @@ def generate_shareable_link(file_id):
 
 @app.route("/")
 def index():
-    # Se não utilizar templates, pode retornar um texto simples:
-    return "Hello from Python Flask on Vercel"
+    return "Hello from Python Flask on Vercel - Integration with Google Drive"
 
 @app.route("/upload", methods=["POST"])
 def upload_handler():
@@ -53,6 +59,7 @@ def upload_handler():
 
     file_path = data.get("file_path")
     # Em ambiente serverless, o sistema de arquivos é somente leitura e contém apenas os arquivos do deploy.
+    # Certifique-se de que o arquivo (ex.: "teste.pdf") esteja incluído no repositório.
     if not file_path or not os.path.exists(file_path):
         return jsonify({"error": "Caminho do arquivo inválido ou arquivo não encontrado."}), 400
 
