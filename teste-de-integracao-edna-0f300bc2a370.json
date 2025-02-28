@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "teste-de-integracao-edna",
+  "private_key_id": "0f300bc2a37052c923223ecf974572ba6592b3d1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDdPXKV7Y3VsC/8\nricBidcVMm0MhlxAm4FKOnNnLIQEuI4Bnq3FGUFDXxPt7shGyU4MzrHUrDnLYcrL\nhk5XG6KzDbkOgbEdXNA7opatSbmZoCKOvBTdfE1WvshU7Q2XfFiYoQnaa2++8Q7y\nFGCTEYGI5bOAgGBVndAl6ZxeIXcYzJ7S1QRN+92i0yevgUkRHFYy3UdHMgat57gj\nLvQkhujnTOBZh3EXI0v/Syjt8go0evP6QrUiJqQld2l24W05R1GSbYv1c8RIVdCh\nowdKPqcxVIoYPh5bmnTabI+T/tGSwKkxMaZ+GHOU8NgT3aPbxlGFwoqyrKR1g/RI\nO5DsSjUrAgMBAAECggEANdsa9S9OSxnoHJECUsgMsQ7E5/sfIuUX7ItdA10dSA7r\nFq7bazLyJaXT8qQhYcXoN4rrVDOWoBFOrgukL2U9TmwFQ+hDRrwMvq+eEVH0mdaX\nAvr6802qf/bSSoYoPFubL5BoFyD3I1qIAlr+hV6KE1qjPyFBEiZoAIqlM27fEIxu\n81xInCV6XgPGHA5CItU942dO4YA+tmRvNcDkO6es8VQQp53z54o47oQmYlTS+bZV\nKroMHk2aoFOFd4+3G6g4tDsqxOu2R1qAuy0MQUzvJcNL/j6myB4/31RYjuLnk58A\nqKaPY9/pViOlta85/ALS7ndIcprrlgIZUt4krMJsMQKBgQD94UQ9kikRf9JKXqqd\nEjY2hHX3TRH+Z4x8vZ3H3wJcb4KVy0w0gn4MmaAPby6KDSKzKNr8cX4pqF94Tm39\nFKtDj3mWHXgyiKY/a3duaycCGKGmSb3D392nbiNeSH54vMUvAA4rdLFewUCZSBH6\nB9H21cqwYUtaPm0bM0FZAxPVUQKBgQDfFmekJ4DCPn0vD2Dg4korxSN0Y9KB8jzQ\nYPO5O4Of3DfLMtP56DC1m99hkaWwZbaLj/CBZVDK8pWppyLdfKDMelNyIak/NC4L\novQ4qIPEmdOzfVPAW+69XfgDsdbhDB1IeA+rnnR8JHGDbiPw9XiSSMjtAYi6vk2i\nRnMhDdpzuwKBgCR92J0xAQ4u3T8rVEK3d2tmpr4hKdDzeVIEv0UXXPOEY7S8P/vc\nNdoByuvtAzd8o9w0pyVZ+tRqCy7ztwOFkQho+wUEv14kHiFHhSct57F5cOLB/rDE\n4MtMHXFT4jngiEc1LtQ4NbZ0+KAPp+XUce2U1Ul88qPKDUy3lVECDDvBAoGBALKw\ncYetFJeCEid1u/WljB+PIp0BsAXiEBAg+FewcffEHvSl2+DauNle5whx7zNh5VvY\niZ47lwFYWcSwWV7riqj+eoR6reQwWYl8lv4jDJiXVlj40/LKMGqCMDxVYHaWi4YW\nlQa0Pz2Iu1u5BxTkqhUSM86TYf+imvCWWXVqcUYtAoGBAIZlc4wY37eYV188u08h\n0phT6agABNRjho+qsHuRMwR7UY0KiYHTcFn7bncdHum9zA3ZAf+Inp3fNqo3OBCP\nEy13fVt/Iv2laSiHE/sbFCZoqQmavUTpF8BvUb4W57n8AT8vwRinjrrZiilPX/0k\nP6cHLKeAWFON4fyHRr3nx39P\n-----END PRIVATE KEY-----\n",
+  "client_email": "teste-de-integracao@teste-de-integracao-edna.iam.gserviceaccount.com",
+  "client_id": "116737222417872975842",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/teste-de-integracao%40teste-de-integracao-edna.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
